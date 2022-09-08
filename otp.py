@@ -10,7 +10,7 @@ mycursor = mydb.cursor(buffered=True)
 
 randomNumber = random.randint(100000,999999)
 sender_email = "trigun.pandey2021@vitstudent.ac.in"
-sender_password = "fun2trigun"
+sender_password = "###########"
 
 receiver_email ="pandeytrigun02@gmail.com"
 
@@ -27,7 +27,7 @@ msg['From'] = "trigun.pandey2021@vitstudent.ac.in"
 msg['To'] = "pandeytrigun02@gmail.com"
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("trigun.pandey2021@vitstudent.ac.in", "fun2trigun")
+server.login("trigun.pandey2021@vitstudent.ac.in", "##########")
 server.send_message(msg)
 server.quit()
 print('otp sent to mail')
